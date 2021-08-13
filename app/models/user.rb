@@ -8,6 +8,8 @@ class User
   include RailsJwtAuth::Lockable
 
   field :email, type: String
+  field :first_name, type: String
+  field :last_name, type: String
 
   validates :email, presence: true,
                     uniqueness: true,
