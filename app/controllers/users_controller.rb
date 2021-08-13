@@ -3,12 +3,10 @@ class UsersController < RailsJwtAuth::ProfilesController
   # before_action :authenticate_user!
   before_action :is_user?
 
-
   # GET /users/1
   def show
     render json: {user: @user}
   end
-
 
   # PATCH/PUT /users/1
   def update
