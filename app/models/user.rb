@@ -14,4 +14,9 @@ class User
   validates :email, presence: true,
                     uniqueness: true,
                     format: URI::MailTo::EMAIL_REGEXP
+
+  # validates :first_name, optional: true, length: {minimum: 1, maximum: 50}
+  # validates :last_name, optional: true, length: {minimum: 1, maximum: 50}
+
+  has_many :lessons, dependent: :destroy
 end
