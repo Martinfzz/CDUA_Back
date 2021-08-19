@@ -14,4 +14,6 @@ class User
   validates :email, presence: true,
                     uniqueness: true,
                     format: URI::MailTo::EMAIL_REGEXP
+
+  has_many :lessons, dependent: :destroy
 end
