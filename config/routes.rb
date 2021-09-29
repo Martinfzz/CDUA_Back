@@ -13,4 +13,7 @@ Rails.application.routes.draw do
   resource :registration, controller: 'rails_jwt_auth/registrations', only: [:create]
   resource :session, controller: 'rails_jwt_auth/sessions', only: [:create, :destroy]
   resources :lessons, except: [:new, :edit]
+  resources :dictionnaries, except: [:new, :edit]
+  get 'dictionnary/:search', :to => 'dictionnaries#search'
+
 end

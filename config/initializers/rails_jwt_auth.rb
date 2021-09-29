@@ -15,7 +15,7 @@ RailsJwtAuth.setup do |config|
   # config.downcase_auth_field = false
 
   # expiration time for generated tokens
-  # config.jwt_expiration_time = 7.days
+  # config.jwt_expiration_time = 9999999999999999999999.days
 
   # the "iss" (issuer) claim identifies the principal that issued the JWT
   # config.jwt_issuer = 'RailsJwtAuth'

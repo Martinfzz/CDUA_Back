@@ -12,9 +12,6 @@ class LessonsController < ApplicationController
   end
 
   def create
-    puts "--------------------"
-    puts lesson_params
-    puts "--------------------"
     @lesson = Lesson.new(lesson_params)
 
     if @lesson.save
